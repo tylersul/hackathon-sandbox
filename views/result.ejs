@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sentiment Analysis Result</title>
+    </head>
+    <body>
+        <h1>Sentiment Analysis Result</h1>
+
+        <% if (error) { %>
+            <p><%= error %></p>
+        <% } else { %>
+            <p>Text: <%= text %></p>
+            <p>Sentiment: <%= result.sentiment %></p>
+            <p>Score: <%= result.score %></p>
+            <p>Confidence: <%= result.confidence %></p>
+        <% } %>
+
+        <a href="/">Analyze another text</a>
+    </body>
+</html>
