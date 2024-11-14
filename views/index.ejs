@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sentiment Analysis</title>
+  <title>Sentiment Analysis, Summarization & Vector Search</title>
 </head>
 <body>
-  <h1>Enter Text for Sentiment Analysis</h1>
+  <h1>Enter Text for Analysis, Summarization, or Vector Search</h1>
   <form action="/analyze" method="POST">
     <textarea name="text" rows="5" cols="40" placeholder="Type your text here..."></textarea><br>
-    <button type="submit">Analyze Sentiment</button>
+    <button type="submit" name="action" value="analyze">Analyze Sentiment</button>
+    <button type="submit" name="action" value="summarize">Summarize</button>
+    <button type="submit" name="action" value="search">Vector Search</button>
+    <button type="submit" name="action" value="vectorize_collection">Vectorize Collection</button>
   </form>
 </body>
 </html>
